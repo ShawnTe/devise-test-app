@@ -1,0 +1,20 @@
+rails generate devise Monster
+got this in CLI with "be rake routes > routes.txt"
+
+                     Prefix Verb   URI Pattern                       Controller#Action
+        new_monster_session GET    /monsters/sign_in(.:format)       devise/sessions#new
+            monster_session POST   /monsters/sign_in(.:format)       devise/sessions#create
+    destroy_monster_session DELETE /monsters/sign_out(.:format)      devise/sessions#destroy
+           monster_password POST   /monsters/password(.:format)      devise/passwords#create
+       new_monster_password GET    /monsters/password/new(.:format)  devise/passwords#new
+      edit_monster_password GET    /monsters/password/edit(.:format) devise/passwords#edit
+                            PATCH  /monsters/password(.:format)      devise/passwords#update
+                            PUT    /monsters/password(.:format)      devise/passwords#update
+cancel_monster_registration GET    /monsters/cancel(.:format)        devise/registrations#cancel
+       monster_registration POST   /monsters(.:format)               devise/registrations#create
+   new_monster_registration GET    /monsters/sign_up(.:format)       devise/registrations#new
+  edit_monster_registration GET    /monsters/edit(.:format)          devise/registrations#edit
+                            PATCH  /monsters(.:format)               devise/registrations#update
+                            PUT    /monsters(.:format)               devise/registrations#update
+                            DELETE /monsters(.:format)               devise/registrations#destroy
+                       root GET    /                                 home#index
